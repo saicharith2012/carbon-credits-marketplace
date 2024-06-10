@@ -1,0 +1,781 @@
+{
+  "contractName": "GreenNFTFactoryCommons",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "projectId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "claimId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "co2Reductions",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "string",
+          "name": "referenceDocument",
+          "type": "string"
+        }
+      ],
+      "name": "ClaimAudited",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "projectId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "claimId",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "internalType": "contract GreenNFT",
+          "name": "greenNFT",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "carbonCredits",
+          "type": "uint256"
+        }
+      ],
+      "name": "GreenNFTCreated",
+      "type": "event"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"claimId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"co2Reductions\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"string\",\"name\":\"referenceDocument\",\"type\":\"string\"}],\"name\":\"ClaimAudited\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"claimId\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"contract GreenNFT\",\"name\":\"greenNFT\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"carbonCredits\",\"type\":\"uint256\"}],\"name\":\"GreenNFTCreated\",\"type\":\"event\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/commons/GreenNFTFactoryCommons.sol\":\"GreenNFTFactoryCommons\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0x24141d2f6b98d4cb77a8936eae8cbaad2e261d9062bdc08036096f4550092501\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b710eb003944777135f027500a5a57b479fe857849f5f467c1ef9687401e3c95\",\"dweb:/ipfs/QmcELzi6KRzAs3DXwxdsoKWRJ13KSeipKQsJgD3unctdZM\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c\",\"dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x118ed7540f56b21ff92e21ebaa73584048e98d2ac04ca67571329bb8dbd9032f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://da2918b7aff73dd51d41bfcfa548f81eb50531b8353500fdbdacf297076db070\",\"dweb:/ipfs/Qmb8ixAs1vBjZRowQNuNg6bRf2NZmgZ1JTBxmQS14PHpcL\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45\",\"dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a\",\"dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886\",\"dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x52146049d6709c870e8ddcd988b5155cb6c5d640cfcd8978aee52bc1ba2ec4eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ada84513617b7c1b2f890b44503735abaec73a1acd030112a17aac7e6c66a4a1\",\"dweb:/ipfs/QmaiFwdio67iJrfjAdkMac24eJ5sS1qD7CZW6PhUU6KjiK\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c\",\"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/utils/EnumerableMap.sol\":{\"keccak256\":\"0x4b087f06b6670a131a5a14e53b1d2a5ef19c034cc5ec42eeebcf9554325744ad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f6a6af5d848334e40db419773f6360601e311ffc21c2e274f730b8c542da99fd\",\"dweb:/ipfs/QmfA24cxQ2g41ZWUuDF295dxDJ4xF1bSDYtC3EaLd7CzW8\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x1562cd9922fbf739edfb979f506809e2743789cbde3177515542161c3d04b164\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4580d57781513d98870d9738c7d39094336e0a70cdb90d68dad549c6ced466ec\",\"dweb:/ipfs/Qmf9YZzzRFuvMnav9dgmeRUpdYMMECiZX8w25sHWVbA18V\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0xa1e12f97981f1d0964b1c048978606a57127c56c438bab61cdfe269cad859a74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5eefac1760f524971e14aa3f3d79515a3d54fd28c1d3bdca0b36127da349b830\",\"dweb:/ipfs/QmUMzkyH3ytJX5gVPizQruNLhkKmuJb3nFqBDad4LPdg5U\"]},\"project:/contracts/GreenNFT.sol\":{\"keccak256\":\"0x3daac06ee8330d6a79943b16b8154057e9eeef0792ce3a2be45eb456e2a58840\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a277fd9dbb275cd88f556fedee12b0b4af3ed67f986f5a4a237efd95695020f7\",\"dweb:/ipfs/QmSWEjZ8myhMEES9yQDjpiPjYAmioBH2sfJ3wQEagZu6uZ\"]},\"project:/contracts/commons/GreenNFTFactoryCommons.sol\":{\"keccak256\":\"0xb846aa445739cbfb89431951b2bde8130c2b2950c449fd6765933a96bf4d9828\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3027909ea8cf44d5667e21cd5d16f67b7e223ed7a68f105f09b72238842c7f26\",\"dweb:/ipfs/QmVhfLF3hTPwcsAqccKixqRf5KuM61vz8RNYVP79cMLi1C\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220b50308e173316e6d2d90e2ce8ea8a3da7960ea0e6ae707d58721f644a84dd5c564736f6c634300060c0033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220b50308e173316e6d2d90e2ce8ea8a3da7960ea0e6ae707d58721f644a84dd5c564736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "103:568:23:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "103:568:23:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport { GreenNFT } from \"../GreenNFT.sol\";\n\n\ncontract GreenNFTFactoryCommons {\n\n    //---------------------------\n    // Storages\n    //---------------------------\n\n\n    //---------------------------\n    // Objects\n    //---------------------------\n\n\n    //---------------------------\n    // Events\n    //---------------------------\n    event ClaimAudited (\n        uint projectId, \n        uint claimId,\n        uint co2Reductions, \n        string referenceDocument\n    );\n\n    event GreenNFTCreated (\n        uint projectId, \n        uint claimId,\n        GreenNFT greenNFT,\n        uint carbonCredits\n    );\n\n}\n",
+  "sourcePath": "/home/saicharith/dev/carbon-credits-marketplace/smart-contract/contracts/commons/GreenNFTFactoryCommons.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/commons/GreenNFTFactoryCommons.sol",
+    "exportedSymbols": {
+      "GreenNFTFactoryCommons": [
+        5526
+      ]
+    },
+    "id": 5527,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 5503,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:23"
+      },
+      {
+        "absolutePath": "project:/contracts/GreenNFT.sol",
+        "file": "../GreenNFT.sol",
+        "id": 5505,
+        "nodeType": "ImportDirective",
+        "scope": 5527,
+        "sourceUnit": 3838,
+        "src": "57:43:23",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 5504,
+              "name": "GreenNFT",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "66:8:23",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 5526,
+        "linearizedBaseContracts": [
+          5526
+        ],
+        "name": "GreenNFTFactoryCommons",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 5515,
+            "name": "ClaimAudited",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 5514,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5507,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "projectId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5515,
+                  "src": "424:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5506,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "424:4:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5509,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "claimId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5515,
+                  "src": "449:12:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5508,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "449:4:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5511,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "co2Reductions",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5515,
+                  "src": "471:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5510,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "471:4:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5513,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "referenceDocument",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5515,
+                  "src": "500:24:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 5512,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "500:6:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "414:116:23"
+            },
+            "src": "395:136:23"
+          },
+          {
+            "anonymous": false,
+            "documentation": null,
+            "id": 5525,
+            "name": "GreenNFTCreated",
+            "nodeType": "EventDefinition",
+            "parameters": {
+              "id": 5524,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 5517,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "projectId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5525,
+                  "src": "569:14:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5516,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "569:4:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5519,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "claimId",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5525,
+                  "src": "594:12:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5518,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "594:4:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5521,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "greenNFT",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5525,
+                  "src": "616:17:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GreenNFT_$3837",
+                    "typeString": "contract GreenNFT"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 5520,
+                    "name": "GreenNFT",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 3837,
+                    "src": "616:8:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_contract$_GreenNFT_$3837",
+                      "typeString": "contract GreenNFT"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 5523,
+                  "indexed": false,
+                  "mutability": "mutable",
+                  "name": "carbonCredits",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 5525,
+                  "src": "643:18:23",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 5522,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "643:4:23",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "559:108:23"
+            },
+            "src": "537:131:23"
+          }
+        ],
+        "scope": 5527,
+        "src": "103:568:23"
+      }
+    ],
+    "src": "32:640:23"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/commons/GreenNFTFactoryCommons.sol",
+      "exportedSymbols": {
+        "GreenNFTFactoryCommons": [
+          5526
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 5503,
+        "name": "PragmaDirective",
+        "src": "32:23:23"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3838,
+          "absolutePath": "project:/contracts/GreenNFT.sol",
+          "file": "../GreenNFT.sol",
+          "scope": 5527,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "GreenNFT"
+                },
+                "id": 5504,
+                "name": "Identifier",
+                "src": "66:8:23"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 5505,
+        "name": "ImportDirective",
+        "src": "57:43:23"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            5526
+          ],
+          "name": "GreenNFTFactoryCommons",
+          "scope": 5527
+        },
+        "children": [
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "ClaimAudited"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "projectId",
+                      "overrides": null,
+                      "scope": 5515,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 5506,
+                        "name": "ElementaryTypeName",
+                        "src": "424:4:23"
+                      }
+                    ],
+                    "id": 5507,
+                    "name": "VariableDeclaration",
+                    "src": "424:14:23"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "claimId",
+                      "overrides": null,
+                      "scope": 5515,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 5508,
+                        "name": "ElementaryTypeName",
+                        "src": "449:4:23"
+                      }
+                    ],
+                    "id": 5509,
+                    "name": "VariableDeclaration",
+                    "src": "449:12:23"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "co2Reductions",
+                      "overrides": null,
+                      "scope": 5515,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 5510,
+                        "name": "ElementaryTypeName",
+                        "src": "471:4:23"
+                      }
+                    ],
+                    "id": 5511,
+                    "name": "VariableDeclaration",
+                    "src": "471:18:23"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "referenceDocument",
+                      "overrides": null,
+                      "scope": 5515,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "string",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "string",
+                          "type": "string"
+                        },
+                        "id": 5512,
+                        "name": "ElementaryTypeName",
+                        "src": "500:6:23"
+                      }
+                    ],
+                    "id": 5513,
+                    "name": "VariableDeclaration",
+                    "src": "500:24:23"
+                  }
+                ],
+                "id": 5514,
+                "name": "ParameterList",
+                "src": "414:116:23"
+              }
+            ],
+            "id": 5515,
+            "name": "EventDefinition",
+            "src": "395:136:23"
+          },
+          {
+            "attributes": {
+              "anonymous": false,
+              "documentation": null,
+              "name": "GreenNFTCreated"
+            },
+            "children": [
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "projectId",
+                      "overrides": null,
+                      "scope": 5525,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 5516,
+                        "name": "ElementaryTypeName",
+                        "src": "569:4:23"
+                      }
+                    ],
+                    "id": 5517,
+                    "name": "VariableDeclaration",
+                    "src": "569:14:23"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "claimId",
+                      "overrides": null,
+                      "scope": 5525,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 5518,
+                        "name": "ElementaryTypeName",
+                        "src": "594:4:23"
+                      }
+                    ],
+                    "id": 5519,
+                    "name": "VariableDeclaration",
+                    "src": "594:12:23"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "greenNFT",
+                      "overrides": null,
+                      "scope": 5525,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "contract GreenNFT",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "contractScope": null,
+                          "name": "GreenNFT",
+                          "referencedDeclaration": 3837,
+                          "type": "contract GreenNFT"
+                        },
+                        "id": 5520,
+                        "name": "UserDefinedTypeName",
+                        "src": "616:8:23"
+                      }
+                    ],
+                    "id": 5521,
+                    "name": "VariableDeclaration",
+                    "src": "616:17:23"
+                  },
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "indexed": false,
+                      "mutability": "mutable",
+                      "name": "carbonCredits",
+                      "overrides": null,
+                      "scope": 5525,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 5522,
+                        "name": "ElementaryTypeName",
+                        "src": "643:4:23"
+                      }
+                    ],
+                    "id": 5523,
+                    "name": "VariableDeclaration",
+                    "src": "643:18:23"
+                  }
+                ],
+                "id": 5524,
+                "name": "ParameterList",
+                "src": "559:108:23"
+              }
+            ],
+            "id": 5525,
+            "name": "EventDefinition",
+            "src": "537:131:23"
+          }
+        ],
+        "id": 5526,
+        "name": "ContractDefinition",
+        "src": "103:568:23"
+      }
+    ],
+    "id": 5527,
+    "name": "SourceUnit",
+    "src": "32:640:23"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-05-06T06:43:03.779Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

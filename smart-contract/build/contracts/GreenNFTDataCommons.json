@@ -1,0 +1,2146 @@
+{
+  "contractName": "GreenNFTDataCommons",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "claims",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "projectId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "co2Reductions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startOfPeriod",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endOfPeriod",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "referenceDocument",
+          "type": "string"
+        },
+        {
+          "internalType": "bool",
+          "name": "audited",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "greenNFTEmissonDatas",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "co2Emissions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "co2Reductions",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "carbonCredits",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "buyableCarbonCredits",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "greenNFTMetadatas",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "projectId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "claimId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "contract GreenNFT",
+          "name": "greenNFT",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "projectOwner",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "auditor",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "timestampOfissuedDate",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startOfPeriod",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "endOfPeriod",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "auditedReport",
+          "type": "string"
+        },
+        {
+          "internalType": "enum GreenNFTDataCommons.GreenNFTStatus",
+          "name": "greenNFTStatus",
+          "type": "uint8"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "projects",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "projectOwner",
+          "type": "address"
+        },
+        {
+          "internalType": "string",
+          "name": "projectName",
+          "type": "string"
+        },
+        {
+          "internalType": "uint256",
+          "name": "co2Emissions",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"claims\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"co2Reductions\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startOfPeriod\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endOfPeriod\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"referenceDocument\",\"type\":\"string\"},{\"internalType\":\"bool\",\"name\":\"audited\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"greenNFTEmissonDatas\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"co2Emissions\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"co2Reductions\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"carbonCredits\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"buyableCarbonCredits\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"greenNFTMetadatas\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"projectId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"claimId\",\"type\":\"uint256\"},{\"internalType\":\"contract GreenNFT\",\"name\":\"greenNFT\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"projectOwner\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"auditor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"timestampOfissuedDate\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"startOfPeriod\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"endOfPeriod\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"auditedReport\",\"type\":\"string\"},{\"internalType\":\"enum GreenNFTDataCommons.GreenNFTStatus\",\"name\":\"greenNFTStatus\",\"type\":\"uint8\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"projects\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"projectOwner\",\"type\":\"address\"},{\"internalType\":\"string\",\"name\":\"projectName\",\"type\":\"string\"},{\"internalType\":\"uint256\",\"name\":\"co2Emissions\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/commons/GreenNFTDataCommons.sol\":\"GreenNFTDataCommons\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"@openzeppelin/contracts/introspection/ERC165.sol\":{\"keccak256\":\"0x24141d2f6b98d4cb77a8936eae8cbaad2e261d9062bdc08036096f4550092501\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b710eb003944777135f027500a5a57b479fe857849f5f467c1ef9687401e3c95\",\"dweb:/ipfs/QmcELzi6KRzAs3DXwxdsoKWRJ13KSeipKQsJgD3unctdZM\"]},\"@openzeppelin/contracts/introspection/IERC165.sol\":{\"keccak256\":\"0xf70bc25d981e4ec9673a995ad2995d5d493ea188d3d8f388bba9c227ce09fb82\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bd970f51e3a77790c2f02b5b1759827c3b897c3d98c407b3631e8af32e3dc93c\",\"dweb:/ipfs/QmPF85Amgbqjk3SNZKsPCsqCw8JfwYEPMnnhvMJUyX58je\"]},\"@openzeppelin/contracts/math/SafeMath.sol\":{\"keccak256\":\"0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c\",\"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR\"]},\"@openzeppelin/contracts/token/ERC721/ERC721.sol\":{\"keccak256\":\"0x118ed7540f56b21ff92e21ebaa73584048e98d2ac04ca67571329bb8dbd9032f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://da2918b7aff73dd51d41bfcfa548f81eb50531b8353500fdbdacf297076db070\",\"dweb:/ipfs/Qmb8ixAs1vBjZRowQNuNg6bRf2NZmgZ1JTBxmQS14PHpcL\"]},\"@openzeppelin/contracts/token/ERC721/IERC721.sol\":{\"keccak256\":\"0x2d99a0deb6648c34fbc66d6ac4a2d64798d7a5321b45624f6736fadc63da1962\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2dcdce5ede1e5e650d174ec0b35be7d47b6a50f30bc895ef0d9e59fb75052e45\",\"dweb:/ipfs/QmQ2XFsDLTYqfEdw7pYzHiGtFRY11yQm4b6ynYgKqDxeB8\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Enumerable.sol\":{\"keccak256\":\"0xe6bd1b1218338b6f9fe17776f48623b4ac3d8a40405f74a44bc23c00abe2ca13\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c354c3f6e9c487759aa7869be4fba68e0b2efc777b514d289c4cbd3ff8f7e1a\",\"dweb:/ipfs/QmdF9LcSYVmiUCL7JxLEYmSLrjga6zJsujfi6sgEJD4M1z\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Metadata.sol\":{\"keccak256\":\"0xccb917776f826ac6b68bd5a15a5f711e3967848a52ba11e6104d9a4f593314a7\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://430255ad2229ced6d880e61a67bdc6e48dbbaed8354a7c1fe918cd8b8714a886\",\"dweb:/ipfs/QmTHY56odzqEpEC6v6tafaWMYY7vmULw25q5XHJLCCAeox\"]},\"@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol\":{\"keccak256\":\"0x52146049d6709c870e8ddcd988b5155cb6c5d640cfcd8978aee52bc1ba2ec4eb\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ada84513617b7c1b2f890b44503735abaec73a1acd030112a17aac7e6c66a4a1\",\"dweb:/ipfs/QmaiFwdio67iJrfjAdkMac24eJ5sS1qD7CZW6PhUU6KjiK\"]},\"@openzeppelin/contracts/utils/Address.sol\":{\"keccak256\":\"0x28911e614500ae7c607a432a709d35da25f3bc5ddc8bd12b278b66358070c0ea\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://256c8c8af5eb072bc473226ab2b2187149b8fc04f5f4a4820db22527f5ce8e3c\",\"dweb:/ipfs/QmRvi5BhnL7Rxf85KrJhwM6RRhukm4tzoctRdgQEheNyiN\"]},\"@openzeppelin/contracts/utils/Context.sol\":{\"keccak256\":\"0x8d3cb350f04ff49cfb10aef08d87f19dcbaecc8027b0bed12f3275cd12f38cf0\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://ded47ec7c96750f9bd04bbbc84f659992d4ba901cb7b532a52cd468272cf378f\",\"dweb:/ipfs/QmfBrGtQP7rZEqEg6Wz6jh2N2Kukpj1z5v3CGWmAqrzm96\"]},\"@openzeppelin/contracts/utils/EnumerableMap.sol\":{\"keccak256\":\"0x4b087f06b6670a131a5a14e53b1d2a5ef19c034cc5ec42eeebcf9554325744ad\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f6a6af5d848334e40db419773f6360601e311ffc21c2e274f730b8c542da99fd\",\"dweb:/ipfs/QmfA24cxQ2g41ZWUuDF295dxDJ4xF1bSDYtC3EaLd7CzW8\"]},\"@openzeppelin/contracts/utils/EnumerableSet.sol\":{\"keccak256\":\"0x1562cd9922fbf739edfb979f506809e2743789cbde3177515542161c3d04b164\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://4580d57781513d98870d9738c7d39094336e0a70cdb90d68dad549c6ced466ec\",\"dweb:/ipfs/Qmf9YZzzRFuvMnav9dgmeRUpdYMMECiZX8w25sHWVbA18V\"]},\"@openzeppelin/contracts/utils/Strings.sol\":{\"keccak256\":\"0xa1e12f97981f1d0964b1c048978606a57127c56c438bab61cdfe269cad859a74\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5eefac1760f524971e14aa3f3d79515a3d54fd28c1d3bdca0b36127da349b830\",\"dweb:/ipfs/QmUMzkyH3ytJX5gVPizQruNLhkKmuJb3nFqBDad4LPdg5U\"]},\"project:/contracts/GreenNFT.sol\":{\"keccak256\":\"0x3daac06ee8330d6a79943b16b8154057e9eeef0792ce3a2be45eb456e2a58840\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a277fd9dbb275cd88f556fedee12b0b4af3ed67f986f5a4a237efd95695020f7\",\"dweb:/ipfs/QmSWEjZ8myhMEES9yQDjpiPjYAmioBH2sfJ3wQEagZu6uZ\"]},\"project:/contracts/commons/GreenNFTDataCommons.sol\":{\"keccak256\":\"0x9014e3a4f4ea898e4c59c4b8f786b1108caf4ab4acc38ad2caa8940463543234\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://81621bd761231efe7efbd3a2a7eb054f42f7b07878892b3fe1a964717b7140fb\",\"dweb:/ipfs/QmXqXv6oY7zwwwaXCcd4s2ZtNVrr4BEqqsVJPZK1rBN42c\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5061060e806100206000396000f3fe608060405234801561001057600080fd5b506004361061004c5760003560e01c8063107046bd14610051578063a888c2cd146100fd578063df542dac146101b7578063fd6cf5a7146102b1575b600080fd5b61006e6004803603602081101561006757600080fd5b50356102f4565b60405180846001600160a01b0316815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b838110156100c05781810151838201526020016100a8565b50505050905090810190601f1680156100ed5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b61011a6004803603602081101561011357600080fd5b50356103be565b60405180878152602001868152602001858152602001848152602001806020018315158152602001828103825284818151815260200191508051906020019080838360005b8381101561017757818101518382015260200161015f565b50505050905090810190601f1680156101a45780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b6101d4600480360360208110156101cd57600080fd5b50356104a2565b604051808b81526020018a8152602001896001600160a01b03168152602001886001600160a01b03168152602001876001600160a01b031681526020018681526020018581526020018481526020018060200183600281111561023357fe5b8152602001828103825284818151815260200191508051906020019080838360005b8381101561026d578181015183820152602001610255565b50505050905090810190601f16801561029a5780820380516001836020036101000a031916815260200191505b509b50505050505050505050505060405180910390f35b6102ce600480360360208110156102c757600080fd5b50356105a1565b604080519485526020850193909352838301919091526060830152519081900360800190f35b6000818154811061030157fe5b600091825260209182902060039091020180546001808301805460408051601f60026000199685161561010002969096019093169490940491820187900487028401870190528083526001600160a01b0390931695509293909291908301828280156103ae5780601f10610383576101008083540402835291602001916103ae565b820191906000526020600020905b81548152906001019060200180831161039157829003601f168201915b5050505050908060020154905083565b600181815481106103cb57fe5b9060005260206000209060060201600091509050806000015490806001015490806002015490806003015490806004018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561048f5780601f106104645761010080835404028352916020019161048f565b820191906000526020600020905b81548152906001019060200180831161047257829003601f168201915b5050506005909301549192505060ff1686565b600281815481106104af57fe5b6000918252602091829020600a91909102018054600180830154600280850154600386015460048701546005880154600689015460078a015460088b018054604080516101009c8316159c909c026000190190911698909804601f81018e90048e028b018e01909852878a52999c50969a6001600160a01b039586169a948616999590931697919690959094919283018282801561058e5780601f106105635761010080835404028352916020019161058e565b820191906000526020600020905b81548152906001019060200180831161057157829003601f168201915b5050506009909301549192505060ff168a565b600381815481106105ae57fe5b6000918252602090912060049091020180546001820154600283015460039093015491935091908456fea26469706673582212205f5d85a90897321efa565a291b009ad3db29ca8a27446f096009a08f89ea46f964736f6c634300060c0033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061004c5760003560e01c8063107046bd14610051578063a888c2cd146100fd578063df542dac146101b7578063fd6cf5a7146102b1575b600080fd5b61006e6004803603602081101561006757600080fd5b50356102f4565b60405180846001600160a01b0316815260200180602001838152602001828103825284818151815260200191508051906020019080838360005b838110156100c05781810151838201526020016100a8565b50505050905090810190601f1680156100ed5780820380516001836020036101000a031916815260200191505b5094505050505060405180910390f35b61011a6004803603602081101561011357600080fd5b50356103be565b60405180878152602001868152602001858152602001848152602001806020018315158152602001828103825284818151815260200191508051906020019080838360005b8381101561017757818101518382015260200161015f565b50505050905090810190601f1680156101a45780820380516001836020036101000a031916815260200191505b5097505050505050505060405180910390f35b6101d4600480360360208110156101cd57600080fd5b50356104a2565b604051808b81526020018a8152602001896001600160a01b03168152602001886001600160a01b03168152602001876001600160a01b031681526020018681526020018581526020018481526020018060200183600281111561023357fe5b8152602001828103825284818151815260200191508051906020019080838360005b8381101561026d578181015183820152602001610255565b50505050905090810190601f16801561029a5780820380516001836020036101000a031916815260200191505b509b50505050505050505050505060405180910390f35b6102ce600480360360208110156102c757600080fd5b50356105a1565b604080519485526020850193909352838301919091526060830152519081900360800190f35b6000818154811061030157fe5b600091825260209182902060039091020180546001808301805460408051601f60026000199685161561010002969096019093169490940491820187900487028401870190528083526001600160a01b0390931695509293909291908301828280156103ae5780601f10610383576101008083540402835291602001916103ae565b820191906000526020600020905b81548152906001019060200180831161039157829003601f168201915b5050505050908060020154905083565b600181815481106103cb57fe5b9060005260206000209060060201600091509050806000015490806001015490806002015490806003015490806004018054600181600116156101000203166002900480601f01602080910402602001604051908101604052809291908181526020018280546001816001161561010002031660029004801561048f5780601f106104645761010080835404028352916020019161048f565b820191906000526020600020905b81548152906001019060200180831161047257829003601f168201915b5050506005909301549192505060ff1686565b600281815481106104af57fe5b6000918252602091829020600a91909102018054600180830154600280850154600386015460048701546005880154600689015460078a015460088b018054604080516101009c8316159c909c026000190190911698909804601f81018e90048e028b018e01909852878a52999c50969a6001600160a01b039586169a948616999590931697919690959094919283018282801561058e5780601f106105635761010080835404028352916020019161058e565b820191906000526020600020905b81548152906001019060200180831161057157829003601f168201915b5050506009909301549192505060ff168a565b600381815481106105ae57fe5b6000918252602090912060049091020180546001820154600283015460039093015491935091908456fea26469706673582212205f5d85a90897321efa565a291b009ad3db29ca8a27446f096009a08f89ea46f964736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "100:1959:15:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "100:1959:15:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;219:25;;;;;;;;;;;;;;;;-1:-1:-1;219:25:15;;:::i;:::-;;;;;-1:-1:-1;;;;;219:25:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;251:21;;;;;;;;;;;;;;;;-1:-1:-1;251:21:15;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;279:43;;;;;;;;;;;;;;;;-1:-1:-1;279:43:15;;:::i;:::-;;;;;;;;;;;;;;;-1:-1:-1;;;;;279:43:15;;;;;;-1:-1:-1;;;;;279:43:15;;;;;;-1:-1:-1;;;;;279:43:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;329:49;;;;;;;;;;;;;;;;-1:-1:-1;329:49:15;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;219:25;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;219:25:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;;;219:25:15;;;;-1:-1:-1;219:25:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;251:21::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;251:21:15;;;;;;;-1:-1:-1;;251:21:15;;;:::o;279:43::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;279:43:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;279:43:15;;-1:-1:-1;;;;;279:43:15;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;;279:43:15;;;;;;;-1:-1:-1;;279:43:15;;;:::o;329:49::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;329:49:15;;;:::o",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity 0.6.12;\n\nimport {GreenNFT} from \"../GreenNFT.sol\";\n\ncontract GreenNFTDataCommons {\n    //---------------------------\n    // Storages\n    //---------------------------\n    Project[] public projects;\n\n    Claim[] public claims;\n\n    GreenNFTMetadata[] public greenNFTMetadatas;\n\n    GreenNFTEmissonData[] public greenNFTEmissonDatas;\n\n    //---------------------------\n    // Objects\n    //---------------------------\n    enum GreenNFTStatus {\n        Audited,\n        Sale,\n        NotSale\n    }\n\n    struct Project {\n        address projectOwner;\n        string projectName;\n        uint co2Emissions;\n    }\n\n    // @notice - CO2 reduction claim from a project\n    struct Claim {\n        uint projectId; // This is projectId for the Project struct (Index is projectId - 1)\n        uint co2Reductions;\n        uint startOfPeriod; // e.g). 12:00 UTC, Jan 1, 2022\n        uint endOfPeriod; // e.g). 12:00 UTC, Dec 31, 2024\n        string referenceDocument; // IPFS hash\n        bool audited; // auditing status\n    }\n\n    /// @notice - Metadata of a GreenNFT of a project\n    struct GreenNFTMetadata {\n        // [Key]: index of array\n        uint projectId;\n        uint claimId;\n        // This is claimId for the Claim struct (Index is claimId - 1)\n        GreenNFT greenNFT;\n        address projectOwner;\n        address auditor;\n        uint timestampOfissuedDate; // e.g). 15:00 UTC, Sep 12, 2021\n        uint startOfPeriod; // e.g). 12:00 UTC, Jan 1, 2022\n        uint endOfPeriod; // e.g). 12:00 UTC, Dec 31, 2024\n        string auditedReport; // IPFS hash\n        GreenNFTStatus greenNFTStatus; // \"Audited\" or \"Sale\" or \"Not Sale\"\n    }\n\n    // @notice - Emission data of a GreenNFT of a project\n    struct GreenNFTEmissonData {\n        // [Key]: index of array\n        uint co2Emissions;\n        uint co2Reductions;\n        uint carbonCredits; // CO2 emissions - CO2 reductions\n        uint buyableCarbonCredits;\n    }\n\n    //---------------------------\n    // Events\n    //---------------------------\n}\n",
+  "sourcePath": "/home/saicharith/dev/carbon-credits-marketplace/smart-contract/contracts/commons/GreenNFTDataCommons.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/commons/GreenNFTDataCommons.sol",
+    "exportedSymbols": {
+      "GreenNFTDataCommons": [
+        3820
+      ]
+    },
+    "id": 3821,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 3751,
+        "literals": [
+          "solidity",
+          "0.6",
+          ".12"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:15"
+      },
+      {
+        "absolutePath": "project:/contracts/GreenNFT.sol",
+        "file": "../GreenNFT.sol",
+        "id": 3753,
+        "nodeType": "ImportDirective",
+        "scope": 3821,
+        "sourceUnit": 3095,
+        "src": "57:41:15",
+        "symbolAliases": [
+          {
+            "foreign": {
+              "argumentTypes": null,
+              "id": 3752,
+              "name": "GreenNFT",
+              "nodeType": "Identifier",
+              "overloadedDeclarations": [],
+              "referencedDeclaration": null,
+              "src": "65:8:15",
+              "typeDescriptions": {
+                "typeIdentifier": null,
+                "typeString": null
+              }
+            },
+            "local": null
+          }
+        ],
+        "unitAlias": ""
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 3820,
+        "linearizedBaseContracts": [
+          3820
+        ],
+        "name": "GreenNFTDataCommons",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "107046bd",
+            "id": 3756,
+            "mutability": "mutable",
+            "name": "projects",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3820,
+            "src": "219:25:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Project_$3776_storage_$dyn_storage",
+              "typeString": "struct GreenNFTDataCommons.Project[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 3754,
+                "name": "Project",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 3776,
+                "src": "219:7:15",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Project_$3776_storage_ptr",
+                  "typeString": "struct GreenNFTDataCommons.Project"
+                }
+              },
+              "id": 3755,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "219:9:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Project_$3776_storage_$dyn_storage_ptr",
+                "typeString": "struct GreenNFTDataCommons.Project[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "a888c2cd",
+            "id": 3759,
+            "mutability": "mutable",
+            "name": "claims",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3820,
+            "src": "251:21:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_Claim_$3789_storage_$dyn_storage",
+              "typeString": "struct GreenNFTDataCommons.Claim[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 3757,
+                "name": "Claim",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 3789,
+                "src": "251:5:15",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_Claim_$3789_storage_ptr",
+                  "typeString": "struct GreenNFTDataCommons.Claim"
+                }
+              },
+              "id": 3758,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "251:7:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_Claim_$3789_storage_$dyn_storage_ptr",
+                "typeString": "struct GreenNFTDataCommons.Claim[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "df542dac",
+            "id": 3762,
+            "mutability": "mutable",
+            "name": "greenNFTMetadatas",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3820,
+            "src": "279:43:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_GreenNFTMetadata_$3810_storage_$dyn_storage",
+              "typeString": "struct GreenNFTDataCommons.GreenNFTMetadata[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 3760,
+                "name": "GreenNFTMetadata",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 3810,
+                "src": "279:16:15",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_GreenNFTMetadata_$3810_storage_ptr",
+                  "typeString": "struct GreenNFTDataCommons.GreenNFTMetadata"
+                }
+              },
+              "id": 3761,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "279:18:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_GreenNFTMetadata_$3810_storage_$dyn_storage_ptr",
+                "typeString": "struct GreenNFTDataCommons.GreenNFTMetadata[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "functionSelector": "fd6cf5a7",
+            "id": 3765,
+            "mutability": "mutable",
+            "name": "greenNFTEmissonDatas",
+            "nodeType": "VariableDeclaration",
+            "overrides": null,
+            "scope": 3820,
+            "src": "329:49:15",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_array$_t_struct$_GreenNFTEmissonData_$3819_storage_$dyn_storage",
+              "typeString": "struct GreenNFTDataCommons.GreenNFTEmissonData[]"
+            },
+            "typeName": {
+              "baseType": {
+                "contractScope": null,
+                "id": 3763,
+                "name": "GreenNFTEmissonData",
+                "nodeType": "UserDefinedTypeName",
+                "referencedDeclaration": 3819,
+                "src": "329:19:15",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_struct$_GreenNFTEmissonData_$3819_storage_ptr",
+                  "typeString": "struct GreenNFTDataCommons.GreenNFTEmissonData"
+                }
+              },
+              "id": 3764,
+              "length": null,
+              "nodeType": "ArrayTypeName",
+              "src": "329:21:15",
+              "typeDescriptions": {
+                "typeIdentifier": "t_array$_t_struct$_GreenNFTEmissonData_$3819_storage_$dyn_storage_ptr",
+                "typeString": "struct GreenNFTDataCommons.GreenNFTEmissonData[]"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GreenNFTDataCommons.GreenNFTStatus",
+            "id": 3769,
+            "members": [
+              {
+                "id": 3766,
+                "name": "Audited",
+                "nodeType": "EnumValue",
+                "src": "498:7:15"
+              },
+              {
+                "id": 3767,
+                "name": "Sale",
+                "nodeType": "EnumValue",
+                "src": "515:4:15"
+              },
+              {
+                "id": 3768,
+                "name": "NotSale",
+                "nodeType": "EnumValue",
+                "src": "529:7:15"
+              }
+            ],
+            "name": "GreenNFTStatus",
+            "nodeType": "EnumDefinition",
+            "src": "468:74:15"
+          },
+          {
+            "canonicalName": "GreenNFTDataCommons.Project",
+            "id": 3776,
+            "members": [
+              {
+                "constant": false,
+                "id": 3771,
+                "mutability": "mutable",
+                "name": "projectOwner",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3776,
+                "src": "573:20:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3770,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "573:7:15",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3773,
+                "mutability": "mutable",
+                "name": "projectName",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3776,
+                "src": "603:18:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 3772,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "603:6:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3775,
+                "mutability": "mutable",
+                "name": "co2Emissions",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3776,
+                "src": "631:17:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3774,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "631:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Project",
+            "nodeType": "StructDefinition",
+            "scope": 3820,
+            "src": "548:107:15",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GreenNFTDataCommons.Claim",
+            "id": 3789,
+            "members": [
+              {
+                "constant": false,
+                "id": 3778,
+                "mutability": "mutable",
+                "name": "projectId",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3789,
+                "src": "736:14:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3777,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "736:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3780,
+                "mutability": "mutable",
+                "name": "co2Reductions",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3789,
+                "src": "829:18:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3779,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "829:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3782,
+                "mutability": "mutable",
+                "name": "startOfPeriod",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3789,
+                "src": "857:18:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3781,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "857:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3784,
+                "mutability": "mutable",
+                "name": "endOfPeriod",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3789,
+                "src": "917:16:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3783,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "917:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3786,
+                "mutability": "mutable",
+                "name": "referenceDocument",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3789,
+                "src": "976:24:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 3785,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "976:6:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3788,
+                "mutability": "mutable",
+                "name": "audited",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3789,
+                "src": "1023:12:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_bool",
+                  "typeString": "bool"
+                },
+                "typeName": {
+                  "id": 3787,
+                  "name": "bool",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1023:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Claim",
+            "nodeType": "StructDefinition",
+            "scope": 3820,
+            "src": "713:348:15",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GreenNFTDataCommons.GreenNFTMetadata",
+            "id": 3810,
+            "members": [
+              {
+                "constant": false,
+                "id": 3791,
+                "mutability": "mutable",
+                "name": "projectId",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1188:14:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3790,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1188:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3793,
+                "mutability": "mutable",
+                "name": "claimId",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1212:12:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3792,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1212:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3795,
+                "mutability": "mutable",
+                "name": "greenNFT",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1305:17:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_contract$_GreenNFT_$3094",
+                  "typeString": "contract GreenNFT"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 3794,
+                  "name": "GreenNFT",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3094,
+                  "src": "1305:8:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_contract$_GreenNFT_$3094",
+                    "typeString": "contract GreenNFT"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3797,
+                "mutability": "mutable",
+                "name": "projectOwner",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1332:20:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3796,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1332:7:15",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3799,
+                "mutability": "mutable",
+                "name": "auditor",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1362:15:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 3798,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1362:7:15",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3801,
+                "mutability": "mutable",
+                "name": "timestampOfissuedDate",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1387:26:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3800,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1387:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3803,
+                "mutability": "mutable",
+                "name": "startOfPeriod",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1456:18:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3802,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1456:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3805,
+                "mutability": "mutable",
+                "name": "endOfPeriod",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1516:16:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3804,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1516:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3807,
+                "mutability": "mutable",
+                "name": "auditedReport",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1575:20:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 3806,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1575:6:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3809,
+                "mutability": "mutable",
+                "name": "greenNFTStatus",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3810,
+                "src": "1618:29:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_enum$_GreenNFTStatus_$3769",
+                  "typeString": "enum GreenNFTDataCommons.GreenNFTStatus"
+                },
+                "typeName": {
+                  "contractScope": null,
+                  "id": 3808,
+                  "name": "GreenNFTStatus",
+                  "nodeType": "UserDefinedTypeName",
+                  "referencedDeclaration": 3769,
+                  "src": "1618:14:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_enum$_GreenNFTStatus_$3769",
+                    "typeString": "enum GreenNFTDataCommons.GreenNFTStatus"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "GreenNFTMetadata",
+            "nodeType": "StructDefinition",
+            "scope": 3820,
+            "src": "1121:570:15",
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "GreenNFTDataCommons.GreenNFTEmissonData",
+            "id": 3819,
+            "members": [
+              {
+                "constant": false,
+                "id": 3812,
+                "mutability": "mutable",
+                "name": "co2Emissions",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3819,
+                "src": "1825:17:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3811,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1825:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3814,
+                "mutability": "mutable",
+                "name": "co2Reductions",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3819,
+                "src": "1852:18:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3813,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1852:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3816,
+                "mutability": "mutable",
+                "name": "carbonCredits",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3819,
+                "src": "1880:18:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3815,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1880:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 3818,
+                "mutability": "mutable",
+                "name": "buyableCarbonCredits",
+                "nodeType": "VariableDeclaration",
+                "overrides": null,
+                "scope": 3819,
+                "src": "1942:25:15",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 3817,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "1942:4:15",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "GreenNFTEmissonData",
+            "nodeType": "StructDefinition",
+            "scope": 3820,
+            "src": "1755:219:15",
+            "visibility": "public"
+          }
+        ],
+        "scope": 3821,
+        "src": "100:1959:15"
+      }
+    ],
+    "src": "32:2028:15"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/commons/GreenNFTDataCommons.sol",
+      "exportedSymbols": {
+        "GreenNFTDataCommons": [
+          3820
+        ]
+      },
+      "license": "MIT"
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "0.6",
+            ".12"
+          ]
+        },
+        "id": 3751,
+        "name": "PragmaDirective",
+        "src": "32:23:15"
+      },
+      {
+        "attributes": {
+          "SourceUnit": 3095,
+          "absolutePath": "project:/contracts/GreenNFT.sol",
+          "file": "../GreenNFT.sol",
+          "scope": 3821,
+          "symbolAliases": [
+            {
+              "foreign": {
+                "attributes": {
+                  "argumentTypes": null,
+                  "overloadedDeclarations": [
+                    null
+                  ],
+                  "referencedDeclaration": null,
+                  "type": null,
+                  "value": "GreenNFT"
+                },
+                "id": 3752,
+                "name": "Identifier",
+                "src": "65:8:15"
+              },
+              "local": null
+            }
+          ],
+          "unitAlias": ""
+        },
+        "id": 3753,
+        "name": "ImportDirective",
+        "src": "57:41:15"
+      },
+      {
+        "attributes": {
+          "abstract": false,
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            3820
+          ],
+          "name": "GreenNFTDataCommons",
+          "scope": 3821
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "107046bd",
+              "mutability": "mutable",
+              "name": "projects",
+              "overrides": null,
+              "scope": 3820,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct GreenNFTDataCommons.Project[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct GreenNFTDataCommons.Project[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Project",
+                      "referencedDeclaration": 3776,
+                      "type": "struct GreenNFTDataCommons.Project"
+                    },
+                    "id": 3754,
+                    "name": "UserDefinedTypeName",
+                    "src": "219:7:15"
+                  }
+                ],
+                "id": 3755,
+                "name": "ArrayTypeName",
+                "src": "219:9:15"
+              }
+            ],
+            "id": 3756,
+            "name": "VariableDeclaration",
+            "src": "219:25:15"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "a888c2cd",
+              "mutability": "mutable",
+              "name": "claims",
+              "overrides": null,
+              "scope": 3820,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct GreenNFTDataCommons.Claim[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct GreenNFTDataCommons.Claim[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "Claim",
+                      "referencedDeclaration": 3789,
+                      "type": "struct GreenNFTDataCommons.Claim"
+                    },
+                    "id": 3757,
+                    "name": "UserDefinedTypeName",
+                    "src": "251:5:15"
+                  }
+                ],
+                "id": 3758,
+                "name": "ArrayTypeName",
+                "src": "251:7:15"
+              }
+            ],
+            "id": 3759,
+            "name": "VariableDeclaration",
+            "src": "251:21:15"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "df542dac",
+              "mutability": "mutable",
+              "name": "greenNFTMetadatas",
+              "overrides": null,
+              "scope": 3820,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct GreenNFTDataCommons.GreenNFTMetadata[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct GreenNFTDataCommons.GreenNFTMetadata[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "GreenNFTMetadata",
+                      "referencedDeclaration": 3810,
+                      "type": "struct GreenNFTDataCommons.GreenNFTMetadata"
+                    },
+                    "id": 3760,
+                    "name": "UserDefinedTypeName",
+                    "src": "279:16:15"
+                  }
+                ],
+                "id": 3761,
+                "name": "ArrayTypeName",
+                "src": "279:18:15"
+              }
+            ],
+            "id": 3762,
+            "name": "VariableDeclaration",
+            "src": "279:43:15"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "functionSelector": "fd6cf5a7",
+              "mutability": "mutable",
+              "name": "greenNFTEmissonDatas",
+              "overrides": null,
+              "scope": 3820,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "struct GreenNFTDataCommons.GreenNFTEmissonData[]",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "struct GreenNFTDataCommons.GreenNFTEmissonData[]"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "GreenNFTEmissonData",
+                      "referencedDeclaration": 3819,
+                      "type": "struct GreenNFTDataCommons.GreenNFTEmissonData"
+                    },
+                    "id": 3763,
+                    "name": "UserDefinedTypeName",
+                    "src": "329:19:15"
+                  }
+                ],
+                "id": 3764,
+                "name": "ArrayTypeName",
+                "src": "329:21:15"
+              }
+            ],
+            "id": 3765,
+            "name": "VariableDeclaration",
+            "src": "329:49:15"
+          },
+          {
+            "attributes": {
+              "canonicalName": "GreenNFTDataCommons.GreenNFTStatus",
+              "name": "GreenNFTStatus"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "Audited"
+                },
+                "id": 3766,
+                "name": "EnumValue",
+                "src": "498:7:15"
+              },
+              {
+                "attributes": {
+                  "name": "Sale"
+                },
+                "id": 3767,
+                "name": "EnumValue",
+                "src": "515:4:15"
+              },
+              {
+                "attributes": {
+                  "name": "NotSale"
+                },
+                "id": 3768,
+                "name": "EnumValue",
+                "src": "529:7:15"
+              }
+            ],
+            "id": 3769,
+            "name": "EnumDefinition",
+            "src": "468:74:15"
+          },
+          {
+            "attributes": {
+              "canonicalName": "GreenNFTDataCommons.Project",
+              "name": "Project",
+              "scope": 3820,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "projectOwner",
+                  "overrides": null,
+                  "scope": 3776,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 3770,
+                    "name": "ElementaryTypeName",
+                    "src": "573:7:15"
+                  }
+                ],
+                "id": 3771,
+                "name": "VariableDeclaration",
+                "src": "573:20:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "projectName",
+                  "overrides": null,
+                  "scope": 3776,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 3772,
+                    "name": "ElementaryTypeName",
+                    "src": "603:6:15"
+                  }
+                ],
+                "id": 3773,
+                "name": "VariableDeclaration",
+                "src": "603:18:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "co2Emissions",
+                  "overrides": null,
+                  "scope": 3776,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3774,
+                    "name": "ElementaryTypeName",
+                    "src": "631:4:15"
+                  }
+                ],
+                "id": 3775,
+                "name": "VariableDeclaration",
+                "src": "631:17:15"
+              }
+            ],
+            "id": 3776,
+            "name": "StructDefinition",
+            "src": "548:107:15"
+          },
+          {
+            "attributes": {
+              "canonicalName": "GreenNFTDataCommons.Claim",
+              "name": "Claim",
+              "scope": 3820,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "projectId",
+                  "overrides": null,
+                  "scope": 3789,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3777,
+                    "name": "ElementaryTypeName",
+                    "src": "736:4:15"
+                  }
+                ],
+                "id": 3778,
+                "name": "VariableDeclaration",
+                "src": "736:14:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "co2Reductions",
+                  "overrides": null,
+                  "scope": 3789,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3779,
+                    "name": "ElementaryTypeName",
+                    "src": "829:4:15"
+                  }
+                ],
+                "id": 3780,
+                "name": "VariableDeclaration",
+                "src": "829:18:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "startOfPeriod",
+                  "overrides": null,
+                  "scope": 3789,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3781,
+                    "name": "ElementaryTypeName",
+                    "src": "857:4:15"
+                  }
+                ],
+                "id": 3782,
+                "name": "VariableDeclaration",
+                "src": "857:18:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "endOfPeriod",
+                  "overrides": null,
+                  "scope": 3789,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3783,
+                    "name": "ElementaryTypeName",
+                    "src": "917:4:15"
+                  }
+                ],
+                "id": 3784,
+                "name": "VariableDeclaration",
+                "src": "917:16:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "referenceDocument",
+                  "overrides": null,
+                  "scope": 3789,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 3785,
+                    "name": "ElementaryTypeName",
+                    "src": "976:6:15"
+                  }
+                ],
+                "id": 3786,
+                "name": "VariableDeclaration",
+                "src": "976:24:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "audited",
+                  "overrides": null,
+                  "scope": 3789,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "bool",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "bool",
+                      "type": "bool"
+                    },
+                    "id": 3787,
+                    "name": "ElementaryTypeName",
+                    "src": "1023:4:15"
+                  }
+                ],
+                "id": 3788,
+                "name": "VariableDeclaration",
+                "src": "1023:12:15"
+              }
+            ],
+            "id": 3789,
+            "name": "StructDefinition",
+            "src": "713:348:15"
+          },
+          {
+            "attributes": {
+              "canonicalName": "GreenNFTDataCommons.GreenNFTMetadata",
+              "name": "GreenNFTMetadata",
+              "scope": 3820,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "projectId",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3790,
+                    "name": "ElementaryTypeName",
+                    "src": "1188:4:15"
+                  }
+                ],
+                "id": 3791,
+                "name": "VariableDeclaration",
+                "src": "1188:14:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "claimId",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3792,
+                    "name": "ElementaryTypeName",
+                    "src": "1212:4:15"
+                  }
+                ],
+                "id": 3793,
+                "name": "VariableDeclaration",
+                "src": "1212:12:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "greenNFT",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "contract GreenNFT",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "GreenNFT",
+                      "referencedDeclaration": 3094,
+                      "type": "contract GreenNFT"
+                    },
+                    "id": 3794,
+                    "name": "UserDefinedTypeName",
+                    "src": "1305:8:15"
+                  }
+                ],
+                "id": 3795,
+                "name": "VariableDeclaration",
+                "src": "1305:17:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "projectOwner",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 3796,
+                    "name": "ElementaryTypeName",
+                    "src": "1332:7:15"
+                  }
+                ],
+                "id": 3797,
+                "name": "VariableDeclaration",
+                "src": "1332:20:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "auditor",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "address",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "address",
+                      "stateMutability": "nonpayable",
+                      "type": "address"
+                    },
+                    "id": 3798,
+                    "name": "ElementaryTypeName",
+                    "src": "1362:7:15"
+                  }
+                ],
+                "id": 3799,
+                "name": "VariableDeclaration",
+                "src": "1362:15:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "timestampOfissuedDate",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3800,
+                    "name": "ElementaryTypeName",
+                    "src": "1387:4:15"
+                  }
+                ],
+                "id": 3801,
+                "name": "VariableDeclaration",
+                "src": "1387:26:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "startOfPeriod",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3802,
+                    "name": "ElementaryTypeName",
+                    "src": "1456:4:15"
+                  }
+                ],
+                "id": 3803,
+                "name": "VariableDeclaration",
+                "src": "1456:18:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "endOfPeriod",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3804,
+                    "name": "ElementaryTypeName",
+                    "src": "1516:4:15"
+                  }
+                ],
+                "id": 3805,
+                "name": "VariableDeclaration",
+                "src": "1516:16:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "auditedReport",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "string",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string"
+                    },
+                    "id": 3806,
+                    "name": "ElementaryTypeName",
+                    "src": "1575:6:15"
+                  }
+                ],
+                "id": 3807,
+                "name": "VariableDeclaration",
+                "src": "1575:20:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "greenNFTStatus",
+                  "overrides": null,
+                  "scope": 3810,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "enum GreenNFTDataCommons.GreenNFTStatus",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "contractScope": null,
+                      "name": "GreenNFTStatus",
+                      "referencedDeclaration": 3769,
+                      "type": "enum GreenNFTDataCommons.GreenNFTStatus"
+                    },
+                    "id": 3808,
+                    "name": "UserDefinedTypeName",
+                    "src": "1618:14:15"
+                  }
+                ],
+                "id": 3809,
+                "name": "VariableDeclaration",
+                "src": "1618:29:15"
+              }
+            ],
+            "id": 3810,
+            "name": "StructDefinition",
+            "src": "1121:570:15"
+          },
+          {
+            "attributes": {
+              "canonicalName": "GreenNFTDataCommons.GreenNFTEmissonData",
+              "name": "GreenNFTEmissonData",
+              "scope": 3820,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "co2Emissions",
+                  "overrides": null,
+                  "scope": 3819,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3811,
+                    "name": "ElementaryTypeName",
+                    "src": "1825:4:15"
+                  }
+                ],
+                "id": 3812,
+                "name": "VariableDeclaration",
+                "src": "1825:17:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "co2Reductions",
+                  "overrides": null,
+                  "scope": 3819,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3813,
+                    "name": "ElementaryTypeName",
+                    "src": "1852:4:15"
+                  }
+                ],
+                "id": 3814,
+                "name": "VariableDeclaration",
+                "src": "1852:18:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "carbonCredits",
+                  "overrides": null,
+                  "scope": 3819,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3815,
+                    "name": "ElementaryTypeName",
+                    "src": "1880:4:15"
+                  }
+                ],
+                "id": 3816,
+                "name": "VariableDeclaration",
+                "src": "1880:18:15"
+              },
+              {
+                "attributes": {
+                  "constant": false,
+                  "mutability": "mutable",
+                  "name": "buyableCarbonCredits",
+                  "overrides": null,
+                  "scope": 3819,
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "type": "uint256",
+                  "value": null,
+                  "visibility": "internal"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "uint",
+                      "type": "uint256"
+                    },
+                    "id": 3817,
+                    "name": "ElementaryTypeName",
+                    "src": "1942:4:15"
+                  }
+                ],
+                "id": 3818,
+                "name": "VariableDeclaration",
+                "src": "1942:25:15"
+              }
+            ],
+            "id": 3819,
+            "name": "StructDefinition",
+            "src": "1755:219:15"
+          }
+        ],
+        "id": 3820,
+        "name": "ContractDefinition",
+        "src": "100:1959:15"
+      }
+    ],
+    "id": 3821,
+    "name": "SourceUnit",
+    "src": "32:2028:15"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-05-06T06:44:06.345Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
